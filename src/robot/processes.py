@@ -1,4 +1,4 @@
-from multiprocessing import Process, Lock
+from multiprocessing import Process, Lock, freeze_support
 
 
 class Processes:
@@ -6,6 +6,8 @@ class Processes:
         self.method_list = []
         self.process_list = []
         self.results = {}
+
+        freeze_support()
 
     def result(self, method_name):
         return self.results[method_name] if method_name in self.results else None
