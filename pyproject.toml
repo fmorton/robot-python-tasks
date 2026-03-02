@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "robot-tasks"
-version = "0.2.1"
+version = "0.2.2"
 description = "Simple task library using asyncio."
 readme = "README.rst"
 requires-python = ">=3.9"
